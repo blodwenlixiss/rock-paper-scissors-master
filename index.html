@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="title-wrapper">
+      <div class="container">
+        <div class="title">
+          <img src="./images/logo.svg" alt="rock/paper/Scissors" />
+        </div>
+        <div class="scores">
+          <span>score</span>
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="overlay" id="overlay"></div>
+      <div class="game-content">
+        <button id="game-btn">
+          <div class="paper-blue">
+            <div class="white-bg">
+              <img src="./images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
+        </button>
+        <button id="game-btn">
+          <div class="scissors-yellow">
+            <div class="white-bg">
+              <img src="./images/icon-scissors.svg" alt="Scissors" />
+            </div>
+          </div>
+        </button>
+        <button id="game-btn">
+          <div class="rock-red">
+            <div class="white-bg">
+              <img src="./images/icon-rock.svg" alt="rock" />
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="modal-page hidden">
+        <div class="rules">
+          <span>rules</span>
+          <button id="close-btn">
+            <img src="./images/icon-close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="rule-img"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="btn-rule">
+        <button id="rule-btn">rules</button>
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
