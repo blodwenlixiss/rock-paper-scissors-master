@@ -26,56 +26,36 @@
         </div>
         <div class="scores">
           <span>score</span>
-          <p>0</p>
+          <p id="score">0</p>
         </div>
       </div>
     </div>
     <main>
       <div class="overlay" id="overlay"></div>
-      <div class="game-content">
-        <button id="game-btn">
-          <div id="paper-blue">
-            <div class="white-bg">
-              <img src="./images/icon-paper.svg" alt="paper" />
-            </div>
-          </div>
-        </button>
-        <button id="game-btn">
-          <div class="scissors-yellow wave-animation">
-            <div class="white-bg">
-              <img src="./images/icon-scissors.svg" alt="Scissors" />
-            </div>
-          </div>
-        </button>
-        <button id="game-btn">
-          <div class="rock-red">
-            <div class="white-bg">
-              <img src="./images/icon-rock.svg" alt="rock" />
-            </div>
-          </div>
-        </button>
-      </div>
+      <div class="game-content"></div>
       <div class="game-chosed hidden">
         <div class="text-pick-placement">
           <div class="player">
             <p>you picked</p>
-            <div class="grey-circle"></div>
+            <div class="grey-circle player-chose"></div>
           </div>
-          <div class="text-content">
-            <div class="succsess hidden">
-              <p>you win</p>
-              <button id="play-again">play again</button>
-            </div>
-            <div class="failure hidden">
-              <p>you lost</p>
-              <button id="play-again">play again</button>
-            </div>
+          <div class="player">
+            <p>the house picked</p>
+            <div class="grey-circle computer-chose"></div>
           </div>
-          <div class="computer">
-            <div class="player">
-              <p>the house picked</p>
-              <div class="grey-circle"></div>
-            </div>
+        </div>
+        <div class="text-content">
+          <div class="succsess hidden">
+            <p>you win</p>
+            <button class="play-again">play again</button>
+          </div>
+          <div class="draw hidden">
+            <p>draw</p>
+            <button class="play-again">play again</button>
+          </div>
+          <div class="failure hidden">
+            <p>you lost</p>
+            <button class="play-again">play again</button>
           </div>
         </div>
       </div>
@@ -93,13 +73,13 @@
       <div class="btn-rule">
         <button id="rule-btn">rules</button>
       </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

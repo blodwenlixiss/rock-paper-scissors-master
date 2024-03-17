@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 30px;
 }
 .container {
   display: flex;
@@ -46,6 +46,7 @@ body {
   padding: 10px;
   font-size: 32px;
 }
+
 /* game */
 
 main {
@@ -63,7 +64,7 @@ main {
   min-height: 250px;
   position: relative;
 }
-#game-btn {
+.game-btn {
   cursor: pointer;
   background: none;
   border: 0;
@@ -79,7 +80,7 @@ main {
   box-shadow: 0px 5px 0px 0px rgba(194, 194, 194, 0.75) inset;
 }
 
-#paper-blue {
+.paper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +98,7 @@ main {
   box-shadow: 0px 5px 0px 0px hsl(230, 54%, 47%);
 }
 
-.scissors-yellow {
+.scissors {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +112,7 @@ main {
   background: radial-gradient(circle, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
   box-shadow: 0px 5px 0px 0px hsl(39, 66%, 41%);
 }
-.rock-red {
+.rock {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,22 +174,26 @@ main {
   cursor: pointer;
 }
 .game-chosed {
+  position: relative;
   min-width: 100%;
 }
 .text-pick-placement {
   padding: 10px 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 50px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: white;
 }
 .player {
-  padding: 10px;
+  min-width: 140px;
+  min-height: 250px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,9 +207,22 @@ main {
   border-radius: 50%;
 }
 .text-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 42px;
+  display: flex;
+  justify-content: center;
 }
-#play-again {
+.text-content p {
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+.play-again {
   text-transform: uppercase;
   font-size: 24px;
   background: white;
@@ -214,19 +232,16 @@ main {
   border: none;
   cursor: pointer;
 }
-#play-again:hover {
+.play-again:hover {
   background: rgba(217, 217, 217, 0.651);
 }
-.game-chosed-placements {
-  position: absolute;
+.p-relative {
+  position: relative;
   top: -40px;
-  right: 50%;
-  transform: translate(50%);
 }
 /* footer */
 
 .btn-rule {
-  padding-top: 100px;
   max-width: 90%;
   display: flex;
   justify-content: flex-end;
@@ -257,4 +272,81 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .title-wrapper {
+    padding: 30px;
+    display: block;
+  }
+  .container {
+    padding: 10px;
+  }
+  .title {
+    max-width: 100%;
+  }
+  .title img {
+    max-width: 60%;
+  }
+  .scores {
+    padding: 10px;
+  }
+  .scores span {
+    font-size: 12px;
+  }
+  .scores p {
+    font-size: 22px;
+  }
+  /* main */
+  main {
+    padding: 10px;
+  }
+  .game-content {
+    min-width: 200px;
+
+    background-size: contain;
+    min-width: 150px;
+  }
+  .white-bg img {
+    width: 50%;
+  }
+  .paper {
+    top: 20px;
+    left: -30px;
+  }
+  .rock {
+    top: 20px;
+    right: -30px;
+  }
+  .scissors {
+    bottom: 20px;
+  }
+  .paper,
+  .scissors,
+  .rock {
+    width: 100px;
+    height: 100px;
+  }
+  .draw p {
+    text-transform: uppercase;
+    color: white;
+  }
+  .p-relative {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .text-content {
+    bottom: -100px;
+  }
+  .btn-rule {
+    max-width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
