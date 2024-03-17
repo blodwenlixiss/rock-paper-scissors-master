@@ -1,5 +1,4 @@
 body {
-  min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +8,7 @@ body {
     hsl(214, 47%, 23%) 0%,
     hsl(237, 49%, 15%) 100%
   );
+  min-height: 100vh;
 }
 .hidden {
   display: none;
@@ -65,6 +65,8 @@ main {
 }
 #game-btn {
   cursor: pointer;
+  background: none;
+  border: 0;
 }
 .white-bg {
   display: flex;
@@ -77,7 +79,7 @@ main {
   box-shadow: 0px 5px 0px 0px rgba(194, 194, 194, 0.75) inset;
 }
 
-.paper-blue {
+#paper-blue {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,6 +96,7 @@ main {
   );
   box-shadow: 0px 5px 0px 0px hsl(230, 54%, 47%);
 }
+
 .scissors-yellow {
   display: flex;
   justify-content: center;
@@ -169,10 +172,61 @@ main {
   padding: 0;
   cursor: pointer;
 }
-
+.game-chosed {
+  min-width: 100%;
+}
+.text-pick-placement {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+.player {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.grey-circle {
+  position: relative;
+  min-width: 100px;
+  height: 100px;
+  background-color: hsla(227, 37%, 15%, 0.573);
+  border-radius: 50%;
+}
+.text-content {
+  font-size: 42px;
+}
+#play-again {
+  text-transform: uppercase;
+  font-size: 24px;
+  background: white;
+  padding: 10px;
+  min-width: 100%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#play-again:hover {
+  background: rgba(217, 217, 217, 0.651);
+}
+.game-chosed-placements {
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  transform: translate(50%);
+}
 /* footer */
 
 .btn-rule {
+  padding-top: 100px;
   max-width: 90%;
   display: flex;
   justify-content: flex-end;

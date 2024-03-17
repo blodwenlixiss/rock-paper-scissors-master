@@ -1,8 +1,13 @@
-document.getElementById("rule-btn").addEventListener("click", () => {
-  document.querySelector(".modal-page").classList.remove("hidden");
-  document.getElementById("overlay").style.display = "block";
-  document.getElementById("close-btn").addEventListener("click", () => {
-    document.querySelector(".modal-page").classList.add("hidden");
-    document.getElementById("overlay").style.display = "none";
+const ruleBtn = document.getElementById("rule-btn");
+const modalPage = document.querySelector(".modal-page");
+const overlay = document.getElementById("overlay");
+const gameBtn = document.getElementById("game-btn");
+const closeBtn = document.getElementById("close-btn");
+ruleBtn.addEventListener("click", () => {
+  modalPage.classList.remove("hidden");
+  overlay.style.display = "block";
+  closeBtn.addEventListener("click", () => {
+    modalPage.classList.add("hidden");
+    overlay.style.display = "none";
   });
 });

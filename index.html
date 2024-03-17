@@ -35,14 +35,14 @@
       <div class="overlay" id="overlay"></div>
       <div class="game-content">
         <button id="game-btn">
-          <div class="paper-blue">
+          <div id="paper-blue">
             <div class="white-bg">
               <img src="./images/icon-paper.svg" alt="paper" />
             </div>
           </div>
         </button>
         <button id="game-btn">
-          <div class="scissors-yellow">
+          <div class="scissors-yellow wave-animation">
             <div class="white-bg">
               <img src="./images/icon-scissors.svg" alt="Scissors" />
             </div>
@@ -55,6 +55,30 @@
             </div>
           </div>
         </button>
+      </div>
+      <div class="game-chosed hidden">
+        <div class="text-pick-placement">
+          <div class="player">
+            <p>you picked</p>
+            <div class="grey-circle"></div>
+          </div>
+          <div class="text-content">
+            <div class="succsess hidden">
+              <p>you win</p>
+              <button id="play-again">play again</button>
+            </div>
+            <div class="failure hidden">
+              <p>you lost</p>
+              <button id="play-again">play again</button>
+            </div>
+          </div>
+          <div class="computer">
+            <div class="player">
+              <p>the house picked</p>
+              <div class="grey-circle"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-page hidden">
         <div class="rules">
