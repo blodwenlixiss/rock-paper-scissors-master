@@ -57,7 +57,7 @@ main {
 }
 .game-content {
   padding: 30px;
-  background: url("/images/bg-triangle.svg");
+  background: url("../images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
   min-width: 300px;
@@ -161,7 +161,7 @@ main {
 }
 
 .rule-img {
-  background: url("/images/image-rules.svg");
+  background: url("../images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 300px;
