@@ -19,6 +19,13 @@ body {
   align-items: center;
   padding: 30px;
 }
+.lose h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -242,7 +249,7 @@ main {
 /* footer */
 
 .btn-rule {
-  max-width: 90%;
+  max-width: 97%;
   display: flex;
   justify-content: flex-end;
 }

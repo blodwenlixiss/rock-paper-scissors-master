@@ -68,7 +68,12 @@ classNames.forEach((item) => {
             document.querySelector(".draw").classList.remove("hidden");
           } else {
             document.querySelector(".failure").classList.remove("hidden");
-            document.getElementById("score").textContent = 0;
+            score -= 1;
+            document.getElementById("score").textContent = score;
+            if (score < 0) {
+              document.getElementById("score").textContent = 0;
+              score = 0;
+            }
           }
 
           break;
@@ -77,7 +82,12 @@ classNames.forEach((item) => {
             document.querySelector(".draw").classList.remove("hidden");
           } else if (item == "rock") {
             document.querySelector(".failure").classList.remove("hidden");
-            document.getElementById("score").textContent = 0;
+            score -= 1;
+            document.getElementById("score").textContent = score;
+            if (score < 0) {
+              document.getElementById("score").textContent = 0;
+              score = 0;
+            }
           } else {
             document.querySelector(".succsess").classList.remove("hidden");
             score++;
@@ -87,7 +97,12 @@ classNames.forEach((item) => {
         case "scissors":
           if (item == "paper") {
             document.querySelector(".failure").classList.remove("hidden");
-            document.getElementById("score").textContent = 0;
+            score -= 1;
+            document.getElementById("score").textContent = score;
+            if (score < 0) {
+              document.getElementById("score").textContent = 0;
+              score = 0;
+            }
           } else if (item == "rock") {
             document.querySelector(".succsess").classList.remove("hidden");
             score++;
